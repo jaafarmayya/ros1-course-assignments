@@ -1,0 +1,9 @@
+<launch>
+
+<node pkg="turtlesim" type="turtlesim_node" name="turtle" respawn="True">
+    <rosparam command="load" file="$(find p1_h2)/config/params.yaml" />
+</node>
+<node pkg="p1_h2" type="swarm_avoid_collision.py" name="swarm"/>
+
+</launch>
+

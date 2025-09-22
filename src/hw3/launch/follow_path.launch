@@ -1,0 +1,7 @@
+<?xml version ="1.0" ?>
+<launch>
+    <rosparam command = "load" file = "$(find hw3)/config/params.yaml"/>
+    <node pkg = "hw3" type = "obstacles.py" name = "obstacles"  output = "screen"/>
+    <node pkg = "hw3" type = "get_path.py" name = "get_path"  output = "screen"/>
+    <node pkg = "rviz" type = "rviz" name = "rviz"  args = "-d $(find hw3)/config/rviz.rviz"/>
+</launch>

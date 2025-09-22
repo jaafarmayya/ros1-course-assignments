@@ -1,0 +1,15 @@
+devel/
+build/
+install/
+logs/
+bin/
+lib/
+msg_gen/
+srv_gen/
+*.pyc
+*.swp
+*.swo
+.DS_Store
+.vscode/
+.idea/
+

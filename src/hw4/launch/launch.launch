@@ -1,0 +1,6 @@
+<launch>
+    <rosparam command = "load" file = "$(find hw4)/config/params.yaml" />
+    <node pkg = "rviz" type = "rviz" name = "rviz" args = "-d $(find hw4)/config/rviz.rviz" />
+    <node pkg = "hw4" type = "Control.py" name = "Control" output ="screen" />
+    <node pkg = "hw4" type = "pot_sim.py" name = "pot_sim" output ="screen" />
+</launch>

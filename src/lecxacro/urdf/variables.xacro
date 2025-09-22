@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:property name="base_length"  value="0.1"/>
+  <xacro:property name="base_radius"  value="0.5"/>
+  <xacro:property name="link1_length" value="1"/>
+  <xacro:property name="link1_radius" value="0.1"/>
+  <xacro:property name="link2_length" value="1"/>
+  <xacro:property name="link2_radius" value="0.1"/>
+</robot>
+
